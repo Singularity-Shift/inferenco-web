@@ -12,7 +12,7 @@ html {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #003366;
-    color: #FFFFFF;
+    color: #E2E8F0;
     line-height: 1.6;
     overflow-x: hidden;
 }
@@ -53,24 +53,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #0066CC 0%, #00BFFF 100%);
+    background: linear-gradient(135deg, #1E90FF 0%, #00E5FF 100%);
     color: white;
-    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+    box-shadow: 0 6px 18px rgba(30, 144, 255, 0.35);
+    border: 1px solid rgba(46, 163, 255, 0.55);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(0, 102, 204, 0.4);
+    filter: brightness(1.05);
+    box-shadow: 0 10px 28px rgba(46, 163, 255, 0.4);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #00BFFF;
-    border: 2px solid #00BFFF;
+    color: #00E5FF;
+    border: 2px solid #1E90FF;
 }
 
 .btn-secondary:hover {
-    background: #00BFFF;
+    background: linear-gradient(135deg, #1E90FF 0%, #00E5FF 100%);
     color: #003366;
 }
 
@@ -105,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo-img {
-    height: 40px;
+    height: 80px;
     width: auto;
     object-fit: contain;
 }
@@ -161,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     bottom: 0;
     background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-    opacity: 0.5;
+    opacity: 0.35;
 }
 
 .hero-content {
@@ -188,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-subtitle {
     font-size: 1.1rem;
-    color: #94A3B8;
+    color: #B6C2CF;
     margin-bottom: 2rem;
     max-width: 600px;
 }
@@ -218,9 +220,10 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 2px solid #0066CC;
+    border: 3px solid #1E90FF;
     border-radius: 50%;
     animation: pulse-ring 2s infinite;
+    box-shadow: 0 0 0 6px rgba(46,163,255,0.25), 0 0 80px rgba(46,163,255,0.25) inset;
 }
 
 .ai-icon {
@@ -233,13 +236,13 @@ h1, h2, h3, h4, h5, h6 {
     height: 220px;
     z-index: 2;
     border-radius: 50%;
-    box-shadow: 0 8px 32px rgba(0, 102, 204, 0.3);
+    box-shadow: 0 10px 36px rgba(46, 163, 255, 0.45);
 }
 
 /* Problem Section */
 .problem-section {
     padding: 80px 0;
-    background: rgba(255, 255, 255, 0.02);
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .problem-grid {
@@ -383,8 +386,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .feature-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
@@ -393,8 +396,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .feature-card:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(37, 99, 235, 0.3);
+    background: rgba(255, 255, 255, 0.09);
+    border-color: rgba(46, 163, 255, 0.45);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
 }
 
 .feature-icon {
